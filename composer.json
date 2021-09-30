@@ -17,8 +17,8 @@
     }
   ],
   "require": {
-    "php": ">=5.5.9",
-    "symfony/http-foundation": "^3.0",
+    "php": "^7.3|^8.09",
+    "symfony/http-foundation": "^5.0",
     "nesbot/carbon": "^1.21"
   },
   "minimum-stability": "dev"
