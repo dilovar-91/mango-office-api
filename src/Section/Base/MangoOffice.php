@@ -189,7 +189,7 @@ Class MangoOffice {
     protected function putCmd($method, array $data, $command_id = null) {
         if (false !== $command_id) {
             if (is_null($command_id)) {
-                $command_id = md5($data . $this->getSign($data));
+                $command_id = "ID" . rand(10000000, 99999999);
             }
             $data['command_id'] = $command_id;
         }
