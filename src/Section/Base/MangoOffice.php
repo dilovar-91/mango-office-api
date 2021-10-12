@@ -193,7 +193,7 @@ Class MangoOffice {
      * отличный от номеров сотрудника ВАТС, которому соответствует поле
      * "extension", на время вызова этот номер будет считаться номером сотрудника.
      */
-    function sendSms($from, $to_number, $text, $sms_sender, $command_id = null) {
+    function sendSms($from, $to_number, $text, $sms_sender=null, $command_id = null) {
         $data = [
             'from_extension' => $from,           
             'to_number' => $to_number,
