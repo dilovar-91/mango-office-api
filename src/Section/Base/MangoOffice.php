@@ -148,6 +148,9 @@ Class MangoOffice {
         return json_decode($json);
     }
 
+    
+    
+
     /**
      * @param      $command_id
      * @param      $from - (внутренний номер) идентификатор сотрудника ВАТС. Обязательное поле. Если у сотрудника ВАТС
@@ -382,5 +385,23 @@ Class MangoOffice {
             }
         }
         return $ret;
+    }
+
+     /**
+     * Получение записи разговора посредством POST запроса
+     *
+     * @param $recording_id
+     * @param $action
+     *
+     * @return mixed
+     */
+
+
+    function getRecord($recording_id, $action="play") {
+        $data = [
+            'recording_id' => $recording_i,
+            'action' => $action
+        ];
+        return $this->putCmd('queries/recording/post/', $data, $command_id);
     }
 }
