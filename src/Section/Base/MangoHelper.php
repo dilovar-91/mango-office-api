@@ -13,7 +13,8 @@ use Sharoff\Mango\Api\MangoOffice;
  * @method static MangoOffice getMethodData()
  * @method static MangoOffice sendCall($from, $to_number, $number = null, $command_id = null)
  * @method static MangoOffice sendCallHangup($command_id, $call_id)
- *  * @method static MangoOffice sendSms($from, $to_number, $text, $sms_sender, $command_id = null)
+ * @method static MangoOffice sendSms($from, $to_number, $text, $sms_sender, $command_id = null)
+ * @method static MangoOffice getRecord($reccording_id, $action = 'play')
  * @method static MangoOffice getStat($date_from, $date_to, $from = 0, $from_number = null, $to = null, $to_number = null, $fields = null, $request_id = null)
  *
  * @package Sharoff\Mango\Api\Base
