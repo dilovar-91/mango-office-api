@@ -399,7 +399,7 @@ Class MangoOffice {
 
     function getRecord($recording_id, $action="play") {
         $data = [
-            'recording_id' => $recording_i,
+            'recording_id' => $recording_id,
             'action' => $action
         ];
         return $this->putCmd('queries/recording/post/', $data, $command_id);
