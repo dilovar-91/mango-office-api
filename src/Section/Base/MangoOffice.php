@@ -402,6 +402,6 @@ Class MangoOffice {
             'recording_id' => $recording_id,
             'action' => $action
         ];
-        return $this->putCmd('queries/recording/post/', $data, $command_id);
+        return $this->putCmd('queries/recording/post/', $data);
     }
 }
